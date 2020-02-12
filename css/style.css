@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+#left-nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+    color: #000000;
+    opacity: 0.75;
+    font-size: 13px;
+}
+body, a, p{
+    font-family: arial,sans-serif
+}
