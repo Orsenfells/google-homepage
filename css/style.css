@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 .nav li {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding-left: 15px;
@@ -12,21 +12,26 @@ a {
 }
 .right{
     float: right;
-    padding-right: 40px;
+   
 }
 body, a, p{
     font-family: arial,sans-serif
 }
 #search-container{
     margin: 0 auto 0 auto;
-    width: 600px;
+    width: 450px;
     padding-top:40px;
+}
+#search-box:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36, .28);
+    transition: background 0.2s ease-in-out;
 }
 #search-box{
     background: white;
     border-radius: 22px;
     opacity: 1;
-    box-shadow: 0 1px 6px 0 rgba(32,33,36, .28);
+    border: 1px solid #dfe1e5;
+  /*  box-shadow: 0 1px 6px 0 rgba(32,33,36, .28);*/
 }
 #search-txt{
     border: none;
@@ -53,4 +58,64 @@ body, a, p{
     height: 20px;
     float: right;
     padding: 10px 20px;
+}
+#app-container{
+    float: right;
+    opacity: 1;
+    align-items: center;
+}
+
+#app-icon{
+    height: 15px;
+}
+ #signin-btn{
+    border: 0;
+    line-height: 2;
+    padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: cornflowerblue;
+
+ } 
+.content{
+    padding-bottom: 35px;
+}
+.btns li{
+    display: inline-block;
+}
+.button-more{
+    line-height: 2.5;
+    border: none;
+    opacity: 1;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #000000;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+.bottom-nav{
+    background-color: #f2f2f2;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    
+}
+
+.bottom-nav a {
+    float: left;
+    display: block;
+    color: #5f6368;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px
+}
+.bottom-nav a:hover{
+    background-color: #ddd;
+    color: black;
 }
