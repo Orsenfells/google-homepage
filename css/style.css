@@ -49,3 +49,8 @@ body, a, p{
     cursor: text;
 
 }
+#ggmic{
+    height: 20px;
+    float: right;
+    padding: 10px 20px;
+}
