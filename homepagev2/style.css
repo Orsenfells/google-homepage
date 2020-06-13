@@ -1,0 +1,26 @@
+body {
+    font-family: arial, sans-serif;
+    display: block;
+    margin: 0;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.nav-toggle, label {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+nav {
+    width: 250px;
+}
+nav ul {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #777777;
+}
+.nav-toggle:checked ~ nav{
+    
+}
