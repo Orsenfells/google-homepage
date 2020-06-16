@@ -20,7 +20,7 @@ header {
     height: 48px;
     
 }
-.nav-toggle {
+input[type=checkbox] {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -152,9 +152,10 @@ section {
     overflow-x: hidden;
     text-overflow: ellipsis;
     padding-right: 20px;
-    position: relative;
+    position: absolute;
     right: 0;
     transform: scale(0,1);
+    background: white;
 }
 .grid-container {
     display: grid;
@@ -199,4 +200,29 @@ section {
     border: 1px solid #dadce0;
     border-radius: 4px;
     padding: 8px ;
+}
+.g-apps:checked ~ section {
+    transform: scale(1, 1)
+}
+.logo-wrap {
+    margin-top: 66px;
+    margin-bottom: 20px;
+}
+.logo-wrap img {
+    display: block;
+    margin: auto;
+    width: 10em;
+}
+.search-wrapper {
+    display: flex;
+}
+.search-wrapper input {
+    margin: auto;
+    max-width: 736px;
+    border-radius: 20px;
+    border: 1px solid #dadce0;
+    height: 3.5em;
+    width: 90%;
+    background: white;
+    padding-left: 14px
 }
